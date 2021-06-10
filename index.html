@@ -5,6 +5,177 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Worknet_responsive_Web</title>
+
+  <style>
+  * {
+    box-sizing: border-box;  
+  }
+
+    :root {
+      --color: #8289eb;
+      --gray_color : #aaa
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    img {
+      vertical-align: top;
+    }
+
+    /* 모바일 용 */
+    .wrap {
+      width: 90%;
+      max-width: 1132px;
+      margin: 0 auto;
+    }
+
+    .banner {
+      display: none;
+    }
+
+    .title_nav {
+      text-align: center;
+    }
+
+    .logo {
+      background: var(--color);
+      padding: 0.625rem 0;
+      width: 100%;
+      display: block;
+    }
+
+    .title_nav .search_box input {
+      border: 2px solid var(--color);
+      width: 70%;
+      height: 1.5rem;
+    }
+
+    .search_box {
+      display: flex;
+      margin: 0.625rem 0;
+      justify-content: center;
+    }
+
+    .title_nav .search_box button#search_btn {
+      width: 10%;
+      background: var(--color);
+      border: none;
+      height: 1.5rem;
+      vertical-align: middle;
+    }
+
+    .title_nav .search_box button img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .title_nav a#search_carrer_btn {
+      display: inline-block;
+      width: 36%;
+      font-size: 0.85rem;
+      border: 1px solid var(--color);
+      font-weight: bold;
+      color: var(--color);
+      padding: 0.3125rem 4%;
+    }
+    
+    .title_nav .interviewer_type {
+      height: 1.5rem;
+      display: inline-block;
+      font-size: 0.9375rem;
+      border: 1px solid var(--gray_color);
+      border-radius: 2px;
+    }
+
+    .title_nav .interviewer_type a {
+      height: 1.5rem;
+      display: inline-block;
+      font-size: 0.9375rem;
+      border-right: 1px solid var(--gray_color);
+      padding: 0 5px;
+      line-height: 1.5rem;
+    }
+
+    .title_nav .interviewer_type a:last-child {
+      border-right: none;
+    }
+
+    #gnb {
+      display: none;
+    }
+
+    #main_section {
+      border-top: 1px solid var(--color);
+      margin-top: 0.625rem;
+    }
+
+    #main_section .login_box .login {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #main_section .login_box .login p {
+      font-size: 0.75rem;
+      color: var(--gray_color);
+      margin: 2.5rem 0 1.2rem 0;
+    }
+
+    #main_section .login_box #login_btn {
+      background: var(--color);
+      color: #fff;
+      font-weight: bolder;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0.625rem 0;
+    }
+
+    #main_section .login_box .search_login_signIn {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.25rem 0;
+    }
+
+    #main_section .login_box .search_login_signIn a{
+      font-size: 0.875rem;
+    }
+
+    #main_section .login_box .social_login {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #main_section .login_box .social_login a {
+      width: 45%;
+      border: 1px solid var(--gray_color);
+      padding: 0.5rem ;
+      font-size: 0.875rem;
+      color: #000;
+      text-align: center;
+    }
+
+    #main_section .login_box .social_login a img{
+      margin-right: 2%;
+    }
+
+    /* 태블릿 용 */
+    @media all and (min-width:768px){
+
+    }
+
+    /* pc 용 */
+    @media all and (min-width:1132px){
+      
+    }
+  </style>
 </head>
 <body>
   <div class="wrap">
@@ -54,12 +225,15 @@
             <button id="banner_close_btn">배너 접기</button>
           </div>
         </div>
-        <div class="title">
-          <a href=""><img src="/images/bg-top-logo.png" alt=""></a>
+      </div>
+      <div class="title">
+        <div class="title_nav">
+          <a href="" class="logo"><img src="/images/bg-top-logo.png" alt=""></a>
           <div class="search_box">
             <input type="search">
-            <button id="search_carrer_btn">일자리 검색</button>
+            <button id="search_btn"><img src="/images/btn-search-header.png" alt=""></button>
           </div>
+          <a id="search_carrer_btn">일자리 검색</a>
           <div class="interviewer_type">
             <a href="">청년</a>
             <a href="">여성</a>
@@ -78,36 +252,38 @@
       </div>
     </header>
     <section id="main_section">
-      <div class="login">
-        <p>워크넷을 더 안전하고 편리하게 이용하세요.</p>
-        <button>워크넷 로그인</button>
-        <div class="search_loin_signIn">
-          <a href="">아이디/패스워드 찾기</a>
-          <a href="">회원가입</a>
+      <div class="login_box">
+        <div class="login">
+          <p>워크넷을 더 안전하고 편리하게 이용하세요.</p>
+          <a href="" id="login_btn">워크넷 로그인</a>
+          <div class="search_login_signIn">
+            <a href="">아이디/패스워드 찾기</a>
+            <a href="">회원가입</a>
+          </div>
+          <div class="social_login">
+            <a href=""><img src="/images/ico-main-login-naver.png" alt="">로그인</a>
+            <a href=""><img src="/images/ico-main-login-kakao.png" alt="">로그인</a>
+          </div>
         </div>
-        <div class="social_login">
-          <a href=""><img src="/images/ico-main-login-naver.png" alt="">로그인</a>
-          <a href=""><img src="/images/ico-main-login-kakao.png" alt="">로그인</a>
+        <div class="work_nav">
+          <ul class="work_list">
+            <li>
+              <p>내게 딱! 맞는 일자리 찾기</p>
+              <h2>구직신청</h3>
+              <img src="/images/getImage (10).png" alt="">
+            </li>
+            <li>
+              <p>우리 회사 맞춤인재 채용</p>
+              <h2>구인신청</h3>
+              <img src="/images/getImage (11).png" alt="">
+            </li>
+            <li>
+              <p>로그인 없이 간편하게!</p>
+              <h2>청소년 심리검사</h3>
+              <img src="/images/getImage (9).png" alt="">
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="work_nav">
-        <ul class="work_list">
-          <li>
-            <p>내게 딱! 맞는 일자리 찾기</p>
-            <h2>구직신청</h3>
-            <img src="/images/getImage (10).png" alt="">
-          </li>
-          <li>
-            <p>우리 회사 맞춤인재 채용</p>
-            <h2>구인신청</h3>
-            <img src="/images/getImage (11).png" alt="">
-          </li>
-          <li>
-            <p>로그인 없이 간편하게!</p>
-            <h2>청소년 심리검사</h3>
-            <img src="/images/getImage (9).png" alt="">
-          </li>
-        </ul>
       </div>
       <div class="notice">
         <ul class="notice_nav">
