@@ -9,6 +9,8 @@
   <style>
   * {
     box-sizing: border-box;  
+    padding: 0;
+    margin: 0;
   }
 
     :root {
@@ -26,6 +28,11 @@
 
     img {
       vertical-align: top;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      font-weight: bold;
     }
 
     /* 모바일 용 */
@@ -91,6 +98,7 @@
       font-size: 0.9375rem;
       border: 1px solid var(--gray_color);
       border-radius: 2px;
+      text-align: center;
     }
 
     .title_nav .interviewer_type a {
@@ -110,10 +118,13 @@
       display: none;
     }
 
+    /* 메인 섹션 */
+
     #main_section {
       border-top: 1px solid var(--color);
       margin-top: 0.625rem;
     }
+
 
     #main_section .login_box .login {
       width: 90%;
@@ -134,7 +145,6 @@
       display: block;
       text-align: center;
       width: 100%;
-      margin: 0 auto;
       padding: 0.625rem 0;
     }
 
@@ -164,6 +174,185 @@
 
     #main_section .login_box .social_login a img{
       margin-right: 2%;
+    }
+
+    #main_section .work_nav {
+      margin-top: 2.5rem;
+    }
+    #main_section .work_nav .work_list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    #main_section .work_nav .work_list li {
+      border: 1px solid var(--gray_color);
+      width: 32%;
+      text-align: center;
+    }
+
+    #main_section .work_nav .work_list li a {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--gray_color);
+      font-size: 0.875rem;
+      word-break: keep-all;
+    }
+
+    #main_section .work_nav .work_list li a span{
+      display: block;
+      color: #000;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    #main_section .notice {
+      position: relative;
+      margin-top: 1.25rem;
+    }
+
+    #main_section .notice .notice_nav{
+      display: flex;
+      flex-direction: row;
+      font-weight: bold;
+      padding: 0.975rem 0;
+    }
+
+    #main_section .notice .notice_nav li {
+      width: 28%;
+      text-align: center;
+    }
+
+    #main_section .notice button {
+      position: absolute;
+      right: 2.7778%;
+      top: 0.975rem;
+    }
+
+    #main_section .list {
+      border-top: 1px solid var(--gray_color);
+    }
+
+    #main_section .content li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3125rem 0;
+    }
+
+    #main_section .content li a{
+      color: #343434;
+      white-space:nowrap; 
+      overflow:hidden;
+      text-overflow: ellipsis;
+      font-size: 0.875rem;
+      width:80%;
+    }
+
+    #main_section .content ul li a:hover{
+      text-decoration: underline;
+    }
+
+    #main_section .content li span {
+      font-size: 0.875rem;
+    }
+
+    #main_section .notice .list div:nth-child(2),
+    #main_section .notice .list div:nth-child(3) {
+      display: none;
+    }
+
+    #main_section .news {
+      position: relative;
+    }
+
+    #main_section .news p {
+      font-weight: bold;
+      padding: 0.975rem;
+      font-size: 1.125rem;
+    }
+
+    #main_section button {
+      position: absolute;
+      top: 0.975rem;
+      right: 2.7778%;
+    }
+
+    #main_section .news {
+      margin-top: 1.25rem;
+    }
+
+    #main_section .news .list .content li:first-child {
+      margin-top: 0.875rem;
+      font-weight: bold;
+      background: rgb(173, 215, 231);
+      padding: 0.875rem;
+      color: #000;
+    }
+
+    #main_section .news .list .content li a {
+      width: 60%;
+    }
+
+    #main_section .information_menu {
+      margin-top: 2.5rem;
+    }
+
+    #main_section .information_menu .information_list {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    #main_section .information_menu .information_list li {
+      width: 33%;
+      border: 1px solid var(--gray_color);
+    }
+
+    #main_section .information_menu .information_list li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      word-break: keep-all ;
+      text-align: center;
+    }
+
+    #main_section .information_menu .information_list img {
+      width: 70%;
+      height: 60%;
+    }
+
+    #main_section .recruit {
+      margin: 2.5rem 0;
+      position: relative;
+    }
+
+    #main_section .recruit .recruit_list li a {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #main_section .recruit .recruit_list li a span {
+      padding-top: 0.625rem;
+    }
+
+    #main_section .recruit .recruit_list li a span strong:first-child {
+      margin-right: 0.625rem;
+    }
+
+    #main_section .recruit .recruit_list li:not(:first-child) {
+      display: none;
+    }
+
+    #main_section .recruit .recruit_button {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #main_section .recruit .recruit_button button {
+      position: initial;
+      float: left;
     }
 
     /* 태블릿 용 */
@@ -268,19 +457,22 @@
         <div class="work_nav">
           <ul class="work_list">
             <li>
-              <p>내게 딱! 맞는 일자리 찾기</p>
-              <h2>구직신청</h3>
-              <img src="/images/getImage (10).png" alt="">
+              <a href="">
+                내게 딱! 맞는 일자리 찾기<span>구직신청</span>
+                <img src="/images/getImage (11).png" alt="">
+              </a>
             </li>
             <li>
-              <p>우리 회사 맞춤인재 채용</p>
-              <h2>구인신청</h3>
-              <img src="/images/getImage (11).png" alt="">
+              <a href="">
+                우리 회사 맞춤인재 채용<span>구인신청</span>
+                <img src="/images/getImage (10).png" alt="">
+              </a>
             </li>
             <li>
-              <p>로그인 없이 간편하게!</p>
-              <h2>청소년 심리검사</h3>
-              <img src="/images/getImage (9).png" alt="">
+              <a href="">
+                로그인 없이 간편하게!<span>청소년 심리검사</span>
+                <img src="/images/getImage (12).png" alt="">
+              </a>
             </li>
           </ul>
         </div>
@@ -293,25 +485,77 @@
         </ul>
         <button><img src="/images/btn-ctrl-more.gif" alt=""></button>
         <div class="list">
-          <ul>
-            <li>[이벤트] TheWork AI 일자리 추천 이벤트 안내<span>05/20</span></li>
-            <li>워크넷 인공지능 서비스, TheWork Ai 베타테스터 모집<span>05/20</span></li>
-            <li>[생애설계과정]자서전쓰기x영상 인생소개서 제작 교육과정(<span>05/20</span></li>
-            <li>2021년 기장군 온택트 청년 취업아카데미 교육생 모집<span>05/20</span></li>
-          </ul> 
+          <div class="notice_1">
+            <ul  class="content">
+              <li>
+                <a href="">[이벤트] TheWork AI 일자리 추천 이벤트 안내</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">워크넷 인공지능 서비스, TheWork Ai 베타테스터 모집</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">[생애설계과정]자서전쓰기x영상 인생소개서 제작 교육과정(</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">2021년 기장군 온택트 청년 취업아카데미 교육생 모집</a>
+                <span>05/20</span></li>
+            </ul> 
+          </div>
+          <div class="noitce_2">
+            <ul  class="content">
+              <li>
+                <a href="">[경기/인천]<스태츠칩팩코리아>【 반도체생산 생산직(OP,정비사, 생산기능직) 현장면접 】사...</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">[경기/인천]■영림임업(주) 영업사원 채용■</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">[부산/경남]일자리 키오스를 활용한 비대면 채용 박람회</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">[경기/인천]제3회 꿈일터 구인구직만남의날</a>
+                <span>05/20</span></li>
+            </ul> 
+          </div>
+          <div class="notice_3">
+            <ul  class="content">
+              <li>
+                <a href="">[경기/인천]2021 상반기용인시 일자리박람회</a>
+                <span>05/20</span></li>
+              <li>
+                <a href="">[경기/인천]용인시 상반기 일자리박람회 업체 모집</a>
+                <span>05/20</span></li>
+            </ul> 
+          </div>
         </div>
-      <ul>
       </div>
       <div class="news">
         <p>오늘의 취업뉴스</p>
         <button><img src="/images/btn-ctrl-more.gif" alt=""></button>
-        <p><a href="">[속보]5월 취업자수 61만 9,000명 ...3개월 연속...<span>서울경제</span><span>06/09</span></a></p>
         <div class="list">
-          <ul>
-            <li>[이벤트] TheWork AI 일자리 추천 이벤트 안내<span>서울경제</span><span>05/20</span></li>
-            <li>워크넷 인공지능 서비스, TheWork Ai 베타테스터 모집<span>서울경제</span><span>05/20</span></li>
-            <li>[생애설계과정]자서전쓰기x영상 인생소개서 제작 교육과정(<span>서울경제</span><span>05/20</span></li>
-            <li>2021년 기장군 온택트 청년 취업아카데미 교육생 모집<span>서울경제</span><span>05/20</span></li>
+          <ul class="content">
+            <li>
+              <a href="" class="">
+                [속보]5월 취업자수 61만 9,000명 ...3개월 연속...
+              </a>
+              <span>서울경제</span><span>06/09</span>
+            </li>
+            <li>
+              <a href="">[이벤트] TheWork AI 일자리 추천 이벤트 안내</a>
+              <span>서울경제</span><span>05/20</span>
+            </li>
+            <li>
+              <a href="">워크넷 인공지능 서비스, TheWork Ai 베타테스터 모집</a>
+              <span>서울경제</span><span>05/20</span>
+            </li>
+            <li>
+              <a href="">[생애설계과정]자서전쓰기x영상 인생소개서 제작 교육과정(</a>
+              <span>서울경제</span><span>05/20</span>
+            </li>
+            <li>
+              <a href="">2021년 기장군 온택트 청년 취업아카데미 교육생 모집</a>
+              <span>서울경제</span><span>05/20</span>
+            </li>
           </ul> 
         </div>
       </div>
@@ -327,7 +571,7 @@
       </div>
       <div class="recruit">
         <h3><img src="/images/ico-alarm.png" alt="">마감 임박 공채</h3>
-        <ul class="recruit_content">
+        <ul class="recruit_list">
           <li>
             <a href="">
             <span><strong>삼성화제서비스헬스케어</strong>모바일 서비스 UI/UX 담당자 채용 ...</span>
@@ -359,9 +603,9 @@
             </a>
           </li>
         </ul>
-        <div>
+        <div class="recruit_button">
           <span>5/5</span>
-          <div>
+          <div class="button_control">
             <button class="prev_btn"><img src="/images/btn-relation-prev.png" alt=""></button>
             <button class='pause_btn'><img src="/images/btn-relation-pause.png" alt=""></button>
             <button class="next_btn"><img src="/images/btn-relation-next.png" alt=""></button>
