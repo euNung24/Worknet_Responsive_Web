@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -355,6 +355,344 @@
       float: left;
     }
 
+    /* 채용정보 */
+    #recruit_information_section {
+      position: relative;
+    }
+
+    #recruit_information_section .name_header {
+      margin-bottom: 1.125rem;
+    }
+
+    h1.section_name {
+      display: inline-block;
+    }
+
+    #recruit_information_section .name_header .name_list a {
+      margin-top: 0.3125rem;  
+      padding: 0 1.3888%;
+      border-right: 1px solid var(--gray_color);
+      display: inline-block;
+    }
+
+    #recruit_information_section .name_header .name_list a:last-child {
+      border-right: none;
+    }
+
+    .section_button {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .section_button a {
+      height: 30px;
+      width: 30px;border: 1px solid var(--gray_color);
+      border-radius: 2px;
+    }
+
+    .section_button a img {
+      width: 100%;
+    }
+
+    #recruit_information_section .companies_list ul li {
+      padding: 1.125rem 2.788%;
+      border: 1px solid var(--gray_color);
+      position: relative;
+      height: 250px;
+    }
+
+    #recruit_information_section .companies_list ul li a img {
+      width: 100%;
+    }
+
+    #recruit_information_section .companies_list ul li:not(:first-child){
+      display: none;
+    }
+
+    .type {
+      padding: 2px;
+    }
+
+    .type.youth {
+      border: 1px solid blue;
+      color: blue;
+    }
+
+    .type.public {
+      border: 1px solid coral;
+      color: coral;
+    }
+
+    #recruit_information_section .companies_list ul a span:last-child {
+      display: block;
+      margin: 0.625rem 0;
+    }
+
+    #recruit_information_section .companies_list ul li button {
+      border: none;
+      position: absolute;
+      bottom: 1.125rem;
+      right: 2.788%;
+    }
+
+    /* 직업 진로 */
+    #carrer_section {
+      margin-top: 2.25rem;
+      position: relative;
+    }
+
+    #carrer_section .carrer_list div {
+      margin-top: 1.5rem;
+      padding-bottom: 1.125rem;
+      border-bottom: 1px solid var(--gray_color);
+    }
+
+    #carrer_section .carrer_list .carrer_list_1 div,
+    #carrer_section .carrer_list .carrer_list_3 div,
+    #carrer_section .carrer_list .carrer_list_4 div {
+      border: none;
+      padding: 0;
+    }
+
+    #carrer_section .carrer_list .carrer_list_1 a,
+    #carrer_section .carrer_list .carrer_list_2 a {
+      background: lightblue;
+      padding: 0.625rem 1.388%;
+      margin: 0.6944%;
+      display: inline-block;
+      width: 45%;
+      text-align: center;
+    }
+
+    #carrer_section .carrer_list h3 {
+      margin-bottom: 0.875rem;
+    }
+
+    #carrer_section .carrer_list .carrer_list_2 {
+      position: relative;
+    }
+
+    #carrer_section .carrer_list .carrer_list_2 p {
+      width: 80%;
+      word-break: keep-all;
+    }
+
+    #carrer_section .carrer_list .carrer_list_2 a {
+      display: block;
+      width: 45%;
+      margin: 1.125rem 0;
+    }
+
+    #carrer_section .carrer_list .carrer_list_2 img {
+      position: absolute;
+      right: 1.388%;
+      bottom: 0;
+    }
+
+    #carrer_section .carrer_list .carrer_list_3 ul li,
+    #carrer_section .carrer_list .carrer_list_4 ul li {
+      background: url('/images/getImage\ \(11\).png') center left no-repeat;
+      background-size: 1.5rem;
+      padding-left: 8.333%;
+      margin: 0.625rem 0;
+    }
+
+    #carrer_section .carrer_list .carrer_list_5 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #carrer_section .carrer_list .carrer_list_5 a {
+      display: block;
+      text-align: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    #carrer_section .carrer_list .carrer_list_5 img {
+      width: 100%;
+    }
+
+    #carrer_section .carrer_list .carrer_list_5 span {
+      display: block;
+      margin: 0.625rem;
+    }
+
+    /* 훈련정보 */
+    #train_section {
+      position: relative;
+      margin-top: 2.25rem;
+    }
+
+    #train_section h2 {
+      font-size: 1.3rem;
+    }
+
+    #train_section .train_list ul li {
+      position: relative;
+      height: 170px;
+      margin: 0.875rem 0;
+    }
+
+    #train_section .train_list ul li a {
+      display: block;
+      width: 80%;
+      height: 120px;
+      word-break: keep-all;
+      margin-top: 0.625rem;
+    }
+
+    #train_section .train_list ul li a img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -5;
+    }
+
+    /* 고용복지정책 */
+    #welfare_policy_section {
+      position: relative;
+      margin-top: 3.5rem;
+    }
+
+    #welfare_policy_section .policy_list div {
+      margin-top: 1.5rem;
+    }
+
+    #welfare_policy_section h3 {
+      margin-bottom: 0.875rem;
+    }
+
+    #welfare_policy_section .policy_list ul li {
+      width: 45%;
+      height: 100px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: top;
+      margin-bottom: 0.875rem;
+    }
+
+    #welfare_policy_section .policy_list ul li a {
+      display: block;
+      height: auto;
+    }
+
+    #welfare_policy_section .policy_list ul li img {
+      width: 30%;
+    }
+
+    #welfare_policy_section .policy_list span {
+      display: block;
+      margin: 0.625rem;
+      word-break: keep-all;
+    }
+
+    #welfare_policy_section .policy_list .policy_slide li{
+      width: 100%;
+      height: auto;
+    }
+
+    #welfare_policy_section .policy_list .policy_slide li:not(:first-child) {
+      display: none;
+    }
+
+    #welfare_policy_section .policy_list .policy_slide img {
+      width: 90%;
+    }
+
+    #welfare_policy_section .programs {
+      margin-top: 1.5rem;
+    }
+
+    #welfare_policy_section .programs h3 a {
+      color: #000;
+    }
+
+    #welfare_policy_section .programs .program_list {
+      height: 150px;
+      overflow-y: scroll;
+      border-top: 0.5px solid var(--gray_color);
+      border-bottom: 0.5px solid var(--gray_color);
+    }
+
+    #welfare_policy_section .programs .program_list li {
+      display: block;
+      padding: 0.625rem 2.788%;
+      border: 0.5px solid var(--gray_color);
+      border-top: none;
+    }
+
+    #welfare_policy_section .programs .program_explain {
+      padding: 1.125rem;
+      border: 0.5px solid var(--gray_color);
+      border-top: none;
+      text-align: center;
+    }
+
+    #welfare_policy_section .programs .program_explain div {
+      padding-bottom: 0.875rem;
+      text-align: left;
+    }
+
+    #welfare_policy_section .programs .program_explain div p {
+      display: inline-block;
+      width: 70%;
+    }
+
+    #welfare_policy_section .programs .program_explain div img {
+      vertical-align: top;
+    }
+
+    #welfare_policy_section .programs .program_explain ul {
+      text-align: left;
+      margin-bottom: 0.875rem;
+    }
+
+    #welfare_policy_section .programs .program_explain a {
+      border: 0.5px solid var(--gray_color);
+    }
+
+    /* 슬라이더 */
+    #slide_section {
+      margin-top: 2.5rem;
+      position: relative;
+    }
+
+    #slide_section .slide_list {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: hidden;
+    }
+
+    #slide_section .button {
+      position: absolute;
+      top: 100%;
+      left: 27%;
+      display: flex;
+      margin-top: 0.325rem;
+    }
+    
+    #slide_section .button a {
+      border: 1px solid var(--gray_color);
+    }
+
+    #slide_section .button a img {
+      vertical-align: middle;
+    }
+
+    /* 푸터 */
+    .footer {
+      margin-top: 4rem;
+    }
+
+    .footers {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--gray_color);
+    }
+
+
     /* 태블릿 용 */
     @media all and (min-width:768px){
 
@@ -615,15 +953,17 @@
     </section>
     <section id="recruit_information_section">
       <div class="name_header">
-        <h1>채용정보</h1>
+        <h1 class="section_name">채용정보</h1>
         <a href=""><img src="/images/btn-sub-home.png" alt=""></a>
-        <a href="">채용정보 상세검색</a>
-        <a href="">강소기업</a>
-        <a href="">정부지원일자리</a>
-        <a href="">시간선택제 일자리</a>
-        <div>
-          <button class="move_up"><img src="/images/btn-move-up.png" alt=""></button>
-          <button class="move_down"><img src="/images/btn-move-down.png" alt=""></button>
+        <div class="name_list">
+          <a href="">채용정보 상세검색</a>
+          <a href="">강소기업</a>
+          <a href="">정부지원일자리</a>
+          <a href="">시간선택제 일자리</a>
+        </div>
+        <div class="section_button">
+          <a href="#main_section" class="move_up"><img src="/images/btn-move-up.png" alt=""></a>
+          <a href="#carrer_section" class="move_down"><img src="/images/btn-move-down.png" alt=""></a>
         </div>
       </div>
       <div class="companies_list">
@@ -631,7 +971,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)계양정밀</strong>
               <span>(주)계양정밀 회계팀 경력사원 채용[구인,구직 만남의 날 사전접수(~6/13)</span>
               </a>
@@ -641,7 +981,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)태진ENG</strong>
               <span>아마다 절곡 및 NCT 유경험자 모집</span>
               </a>
@@ -651,7 +991,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">공채</span>
+              <span class="type public">공채</span>
               <strong>(주)원앤씨</strong>
               <span>(주)원앤씨 정규직 오퍼레이터 채용(경력자 및 신입)</span>
               </a>
@@ -661,7 +1001,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)계양정밀</strong>
               <span>(주)계양정밀 회계팀 경력사원 채용[구인,구직 만남의 날 사전접수(~6/13)</span>
               </a>
@@ -671,7 +1011,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)태진ENG</strong>
               <span>아마다 절곡 및 NCT 유경험자 모집</span>
               </a>
@@ -681,7 +1021,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">공채</span>
+              <span class="type public">공채</span>
               <strong>(주)원앤씨</strong>
               <span>(주)원앤씨 정규직 오퍼레이터 채용(경력자 및 신입)</span>
               </a>
@@ -691,7 +1031,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)계양정밀</strong>
               <span>(주)계양정밀 회계팀 경력사원 채용[구인,구직 만남의 날 사전접수(~6/13)</span>
               </a>
@@ -701,7 +1041,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)태진ENG</strong>
               <span>아마다 절곡 및 NCT 유경험자 모집</span>
               </a>
@@ -711,7 +1051,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">공채</span>
+              <span class="type youth">공채</span>
               <strong>(주)원앤씨</strong>
               <span>(주)원앤씨 정규직 오퍼레이터 채용(경력자 및 신입)</span>
               </a>
@@ -721,7 +1061,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)계양정밀</strong>
               <span>(주)계양정밀 회계팀 경력사원 채용[구인,구직 만남의 날 사전접수(~6/13)</span>
               </a>
@@ -731,7 +1071,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">청년</span>
+              <span class="type youth">청년</span>
               <strong>(주)태진ENG</strong>
               <span>아마다 절곡 및 NCT 유경험자 모집</span>
               </a>
@@ -741,7 +1081,7 @@
           <li>
             <a href="">
               <img src="/images/getImage.gif" alt="">
-              <span class="type">공채</span>
+              <span class="type public">공채</span>
               <strong>(주)원앤씨</strong>
               <span>(주)원앤씨 정규직 오퍼레이터 채용(경력자 및 신입)</span>
               </a>
@@ -753,11 +1093,11 @@
     </section>
     <section id="carrer_section">
       <div class="name_header">
-        <h1>직업진로</h1>
+        <h1 class="section_name">직업진로</h1>
         <a href=""><img src="/images/btn-sub-home.png" alt=""></a>
-        <div>
-          <button class="move_up"><img src="/images/btn-move-up.png" alt=""></button>
-          <button class="move_down"><img src="/images/btn-move-down.png" alt=""></button>
+        <div class ='section_button'>
+          <a href="#recruit_information_section" class="move_up"><img src="/images/btn-move-up.png" alt=""></a>
+          <a href="#welfare_policy_section" class="move_down"><img src="/images/btn-move-down.png" alt=""></a>
         </div>
       </div>
       <div class="carrer_list">
@@ -820,131 +1160,19 @@
         </div>
         <div class="carrer_list_5">
           <h3>그림으로 보는 취업동향</h3>
-          <a href=""><img src="/images/getImage (18).png" alt="">미스터 인턴 - 에필로그</a>
-          <a href=""><img src="/images/getImage (19).png" alt="">새로운 기회와 양질의 미...</a>
-          <a href=""><img src="/images/getImage (18).png" alt="">2021 상반기 주요업종...</a>
-        </div>
-      </div>
-    </section>
-    <section id="welfare_policy_section">
-      <div class="name_header">
-        <h1>고용복지정책</h1>
-        <a href=""><img src="/images/btn-sub-home.png" alt=""></a>
-        <div>
-          <button class="move_up"><img src="/images/btn-move-up.png" alt=""></button>
-          <button class="move_down"><img src="/images/btn-move-down.png" alt=""></button>
-        </div>
-      </div>
-      <div class="policy_list">
-        <div class="policy_list_1">
-          <h3>고용정책</h3>
-          <ul>
-            <li>
-              <a href="">
-                <img src="/images/ico-main-empPolicy01.png" alt="">
-                고용정책 찾기
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/ico-main-empPolicy02.png" alt="">
-                고용 모의계산
-              </a>
-            </li>
-          </ul>
-          <ul class="policy_slide">
-            <li>
-              <a href="">
-                <img src="/images/emp-policy-slide2.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/emp-policy-slide3.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/emp-policy-slide4.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/emp-policy-slide5.png" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="policy_list_2">
-          <h3>복지정책</h3>
-          <ul>
-            <li>
-              <a href="">
-                <img src="/images/ico-main-welfare01.png" alt="">
-                색인별 찾기
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="/images/ico-main-welfare01.png" alt="">
-                분류별 찾기
-              </a>
-            </li><li>
-              <a href="">
-                <img src="/images/ico-main-welfare07.png" alt="">
-                내게 맞는 서비스 찾기
-              </a>
-            </li><li>
-              <a href="">
-                <img src="/images/ico-main-welfare08.png" alt="">
-                복지 모의계산
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="programs">
-        <h3><a href="">구직자취업역랑 강화프로그램</a></h3>
-        <div class="program_list">
-          <a href="">취업희망프로그램</a>
-          <a href="">행복내일 취업지원 프로그램</a>
-          <a href="">성취프로그램</a>
-          <a href="">취업특강</a>
-          <a href="">단기집단상담프로그램</a>
-          <a href="">취업능력향상(행복오름) 프...</a>
-          <a href="">취업능력향상(행복오름) 프...</a>
-          <a href="">성장(성공장년)프로그램</a>
-          <a href="">경력단절여성 프로그램</a>
-          <a href="">청년취업역량 프로그램</a>
-          <a href="">일자리희망 프로그램(인별)</a>
-          <a href="">성장(성공장년)프로그램</a>
-          <a href="">경력단절여성 프로그램</a>
-          <a href="">청년취업역량 프로그램</a>
-          <a href="">일자리희망 프로그램(인별)</a>
-        </div>
-        <div>
-          <h3>취업희망프로그램</h3>
-          <div>
-           <p>취업에 도움이 필요하신 분들에게자신감 회복과 자기성장을 돕는 프로그램입니다.</p>
-            <img src="/images/img-W04D01C.png" alt="">
-          </div>
-          <ul>
-            <li><strong>참가대상</strong> : 취업에 도움이 필요하신 구직자</li>
-            <li><strong>참가인원</strong> : 1회 8~12명, 4일 24시간</li>
-            <li><strong>참여기간</strong> : 4일 과정(중식 및 간식 제공)</li>
-            <li><strong>참가신청</strong> : 고용센터에 신청(전화, 메일, 워크넷 등)</li>
-          </ul>
-          <a href="">상세보기</a>
+          <a href=""><img src="/images/getImage (18).png" alt=""><span>미스터 인턴 - 에필로그</span></a>
+          <a href=""><img src="/images/getImage (19).png" alt=""><span>새로운 기회와 양질의 미...</span></a>
+          <a href=""><img src="/images/getImage (18).png" alt=""><span>2021 상반기 주요업종...</span></a>
         </div>
       </div>
     </section>
     <section id="train_section">
       <div class="name_header">
-        <h1>훈련정보</h1>
+        <h1 class="section_name">훈련정보</h1>
         <a href=""><img src="/images/btn-sub-home.png" alt=""></a>
-        <div>
-          <button class="move_up"><img src="/images/btn-move-up.png" alt=""></button>
-          <button class="move_down"><img src="/images/btn-move-down.png" alt=""></button>
+        <div class ='section_button'>
+          <a href="#carrer_section" class="move_up"><img src="/images/btn-move-up.png" alt=""></a>
+          <a href="welfare_policy_section" class="move_down"><img src="/images/btn-move-down.png" alt=""></a>
         </div>
       </div>
       <div class="train_list">
@@ -980,19 +1208,137 @@
         </ul>
       </div>
     </section>
-    <section class="slide_section">
-      <a href=""><img src="/images/getImage (6).gif" alt=""></a>
-      <a href=""><img src="/images/getImage (4).jpg" alt=""></a>
-      <a href=""><img src="/images/getImage (21).png" alt=""></a>
-      <a href=""><img src="/images/getImage (7).gif" alt=""></a>
-      <a href=""><img src="/images/getImage (4).gif" alt=""></a>
-      <a href=""><img src="/images/getImage (3).jpg" alt=""></a>
-      <a href=""><img src="/images/getImage (4).gif" alt=""></a>
-      <a href=""><img src="/images/getImage (6).gif" alt=""></a>
-      <a href=""><img src="/images/getImage (4).jpg" alt=""></a>
-      <a href=""><img src="/images/getImage (21).png" alt=""></a>
-      <a href=""><img src="/images/getImage (7).gif" alt=""></a>
-      <div>
+    <section id="welfare_policy_section">
+      <div class="name_header">
+        <h1 class="section_name">고용복지정책</h1>
+        <a href=""><img src="/images/btn-sub-home.png" alt=""></a>
+        <div class ='section_button'>
+          <a href="#train_section" class="move_up"><img src="/images/btn-move-up.png" alt=""></a>
+          <a href="#" class="move_down"><img src="/images/btn-move-down.png" alt=""></a>
+        </div>
+      </div>
+      <div class="policy_list">
+        <div class="policy_list_1">
+          <h3>고용정책</h3>
+          <ul>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-empPolicy01.png" alt="">
+                <span>고용정책 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-empPolicy02.png" alt="">
+                <span>고용 모의계산</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="policy_slide">
+            <li>
+              <a href="">
+                <img src="/images/emp-policy-slide2.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/emp-policy-slide3.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/emp-policy-slide4.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/emp-policy-slide5.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="policy_list_2">
+          <h3>복지정책</h3>
+          <ul>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-welfare01.png" alt="">
+                <span>색인별 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-welfare01.png" alt="">
+                <span>분류별 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-welfare07.png" alt="">
+                <span>내게 맞는 서비스 찾기</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="/images/ico-main-welfare08.png" alt="">
+                <span>복지 모의계산</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="programs">
+        <h3><a href="">구직자취업역랑 강화프로그램</a></h3>
+        <div>
+          <ul class="program_list">
+            <li>취업희망프로그램</li>
+            <li>행복내일 취업지원 프로그램</li>
+            <li>성취프로그램</li>
+            <li>취업특강</li>
+            <li>단기집단상담프로그램</li>
+            <li>취업능력향상(행복오름) 프...</li>
+            <li>취업능력향상(행복오름) 프...</li>
+            <li>성장(성공장년)프로그램</li>
+            <li>경력단절여성 프로그램</li>
+            <li>청년취업역량 프로그램</li>
+            <li>일자리희망 프로그램(인별)</li>
+            <li>성장(성공장년)프로그램</li>
+            <li>경력단절여성 프로그램</li>
+            <li>청년취업역량 프로그램</li>
+            <li>일자리희망 프로그램(인별)</li>
+          </ul>
+          <div class="program_explain">
+            <h3>취업희망프로그램</h3>
+            <div>
+            <p>취업에 도움이 필요하신 분들에게자신감 회복과 자기성장을 돕는 프로그램입니다.</p>
+            <img src="/images/img-W04D01C.png" alt="">
+            </div>
+            <ul>
+              <li><strong>참가대상</strong> : 취업에 도움이 필요하신 구직자</li>
+              <li><strong>참가인원</strong> : 1회 8~12명, 4일 24시간</li>
+              <li><strong>참여기간</strong> : 4일 과정(중식 및 간식 제공)</li>
+              <li><strong>참가신청</strong> : 고용센터에 신청(전화, 메일, 워크넷 등)</li>
+            </ul>
+            <a href="">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slide_section">
+      <div class="slide_list">
+        <a href=""><img src="/images/getImage (6).gif" alt=""></a>
+        <a href=""><img src="/images/getImage (4).jpg" alt=""></a>
+        <a href=""><img src="/images/getImage (21).png" alt=""></a>
+        <a href=""><img src="/images/getImage (7).gif" alt=""></a>
+        <a href=""><img src="/images/getImage (4).gif" alt=""></a>
+        <a href=""><img src="/images/getImage (3).jpg" alt=""></a>
+        <a href=""><img src="/images/getImage (4).gif" alt=""></a>
+        <a href=""><img src="/images/getImage (6).gif" alt=""></a>
+        <a href=""><img src="/images/getImage (4).jpg" alt=""></a>
+        <a href=""><img src="/images/getImage (21).png" alt=""></a>
+        <a href=""><img src="/images/getImage (7).gif" alt=""></a>
+      </div>
+      <div class="button">
         <button class="prev_btn"><img src="/images/btn-relation-prev.png" alt=""></button>
         <button class='pause_btn'><img src="/images/btn-relation-pause.png" alt=""></button>
         <button class="next_btn"><img src="/images/btn-relation-next.png" alt=""></button>
@@ -1000,7 +1346,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer_1">
+      <div class="footers footer_1">
         <div>
           <a href=""><img src="/images/bg-logo-ei.png" alt=""></a>
           <a href=""><img src="/images/bg-logo-hrd.png" alt=""></a>
@@ -1010,7 +1356,7 @@
           <button>패밀리 및 유관기관 사이트</button>
         </div>
       </div>
-      <div class="footer_2">
+      <div class="footers footer_2">
         <ul class="fotter_nav">
           <li><a href="">워크넷 소개</a></li>
           <li><a href="">이용약관</a></li>
@@ -1024,7 +1370,7 @@
           <li><a href="">화상상담 관리자</a></li>
         </ul>
       </div>
-      <div class="footer_3">
+      <div class="footers footer_3">
         <div>
           <a href=""><img src="/images/bg-logo-moel.png" alt=""></a>
           <a href=""><img src="/images/bg-logo-keis.png" alt=""></a>
@@ -1035,7 +1381,7 @@
           <li>워크넷 이용문의 workmaster@keis.or.kr 1577-7114(유료)</li>
         </ul>
       </div>
-      <div>
+      <div class="footers footer_4">
         <a href=""><img src="/images/brn-epriavcy.png" alt=""></a>
         <a href=""><img src="/images/brn-wa-2019.png" alt=""></a>
       </div>
